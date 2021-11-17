@@ -1,0 +1,86 @@
+\documentclass[10pt]{beamer}
+
+%\usetheme[progressbar=frametitle]{metropolis}
+%\usepackage{appendixnumberbeamer}
+
+\usetheme[subsectionpage=progressbar, background=light,progressbar=frametitle, block=fill]{metropolis}
+\setbeamercolor{background canvas}{bg=white}
+\definecolor{mygreen}{RGB}{0, 178, 169}
+\definecolor{mybggreen}{RGB}{0,125,118}
+\definecolor{myblue}{RGB}{84,115,255}
+
+\setbeamercolor{frametitle}{bg=white}
+\setbeamercolor{palette primary}{fg=myblue}
+
+
+\setbeamercolor{alerted text}{fg=myblue}
+\setbeamercolor{example text}{fg=mygreen}
+\setbeamercolor{title separator}{fg=mygreen}
+\setbeamercolor{progress bar in head/foot}{fg=mygreen}
+
+
+\makeatletter
+\setbeamertemplate{frametitle}{%
+  \nointerlineskip%
+  \begin{beamercolorbox}[%
+      wd=\paperwidth,%
+      sep=0pt,%
+      leftskip=\metropolis@frametitle@padding,%
+      rightskip=\metropolis@frametitle@padding,%
+    ]{frametitle}%
+  \metropolis@frametitlestrut@start%
+  \insertframetitle%
+  \nolinebreak%
+  \metropolis@frametitlestrut@end%
+  \hfill
+  \raisebox{-0.6ex}{\includegraphics[height=3ex,keepaspectratio]{dataiku_logo.png}}
+  \end{beamercolorbox}%
+}
+\makeatother
+
+
+\titlegraphic{\includegraphics[width=.2\textwidth]{dataiku_logo.png} ~~~ \includegraphics[width=.3\textwidth]{lab_logo.png}}
+
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+\title{Dataiku Research}
+\subtitle{A beamer template for scientific presentation at the Dataiku lab!}
+% \date{\today}
+\date{}
+\author{Victor Bouvier\\~~~~~{\tiny{\texttt{victor.bouvier@dataiku.com}}}}
+\institute{Dataiku Lab}
+% \titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Table of contents}
+  \setbeamertemplate{section in toc}[sections numbered]
+  \tableofcontents%[hideallsubsections]
+\end{frame}
+
+\section[Intro]{Introduction}
+
+\begin{frame}{A nice frame title}
+
+  \begin{exampleblock}{You can write some text in boxes}
+      todo
+    \end{exampleblock}
+    
+    \begin{alertblock}{Box with more emphasis}
+      todo
+    \end{alertblock}
+    
+    \alert{Some emphasized text.}
+  
+\end{frame}
+\end{document}
