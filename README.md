@@ -2,6 +2,11 @@
 
 A metropolis beamer template Dataiku friendly! 
 
+The code is located in the demo directory, as well as the compiled pdf. 
+
+
+
+The rest of the README is the original README from metropolis.
 
 **IMPORTANT NOTICES FOR VERSION 1.0**
 
